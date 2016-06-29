@@ -1,0 +1,18 @@
+<Template name="menu">
+   <div class="top-nav">						
+        <ul class="flexy-menu orange nav1">
+            <li><a class="{{isActiveRoute regex='home'}}"  href="{{pathFor route='home'}}">Home</a></li>						
+            <li><a class="{{isActiveRoute regex='about'}}" href="{{pathFor route='about'}}">About</a>
+                <ul>
+                    <li><a href="{{pathFor route='about'}}">Lorem1</a></li>
+                    <li><a href="{{pathFor route='about'}}">Lorem2</a></li>
+                    <li><a href="{{pathFor route='about'}}">Lorem3</a></li>
+                    <li><a href="{{pathFor route='about'}}">Lorem4</a></li>
+                </ul>
+            </li> 
+            <li><a class="{{isActiveRoute regex='services'}}" href="{{pathFor route='services'}}">Services</a></li>
+            <li><a class="{{isActiveRoute regex='contact'}}" href="{{pathFor route='contact'}}">Contact</a></li>
+            <li><a href="{{pathFor route='login'}}">Login</a></li>
+        </ul>
+    </div>
+</Template>

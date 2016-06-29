@@ -1,0 +1,64 @@
+<template name="workouts">
+
+    {{> pageHeader title="Workouts" desc="Manage your exercices"  }} {{#staggering}}
+
+    <div class="content">
+        <div class="row">
+
+            <div class="col-lg-9">
+                {{#panel title=""}}
+
+                <div class="col-sm-12  control-label">
+                    <h3>Add a new exercise</h3>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <form role="form" id="addworkout" method="post" action="#">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="name">Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" placeholder="Name" required="" value="" id="name" name="name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Category</label>
+                        <div class="col-sm-8">
+                            <select class="form-control m-b" id="categoryselect" name="categoryselect">
+                                <option>Strength</option>
+                                <option>Cardio</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="text-col-sm-4">
+                        <input type="submit" class="btn btn-success" value="Add" />
+                    </div>
+                </form>
+                <hr/>
+                <div class="table-responsive" width="100%">
+                    <table id="workouts" class="table table-striped table-bordered table-hover" width="100%">
+
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--<tr><td>Simple text field</td>
+                            <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter username" class="editable editable-click" style="display: inline;">superuser</a></td>
+                            <td></td>
+                            </tr>-->
+                            {{#each workouts}} {{> workoutItem}} {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+                {{/panel}}
+            </div>
+
+
+        </div>
+    </div>
+
+    {{/staggering}}
+</template>

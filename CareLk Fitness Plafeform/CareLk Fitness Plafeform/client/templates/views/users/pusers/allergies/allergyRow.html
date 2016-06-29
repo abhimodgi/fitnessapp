@@ -1,0 +1,10 @@
+<template name="allergyRow">
+    <tr>
+        <td>{{description}}</td>
+        <td>{{type}}</td>
+        <td>{{allergen}}</td>
+        {{#unless isPatient}}
+        <td>Actions</td>
+        {{/unless}}
+    </tr>
+</template>

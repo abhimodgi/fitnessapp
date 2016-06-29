@@ -1,0 +1,14 @@
+<template name="vitalSignsRow">
+    <tr>
+        <td>{{weight}}</td>
+        <td>{{height}}</td>
+        <td>{{bmi}}</td>
+        <td>{{bp}}</td>
+        <td>{{pulse}}</td>
+        <td>{{respiration}}</td>
+        <td>{{formatedDate}}</td>
+        {{#unless isPatient}}
+        <td>Actions</td>
+        {{/unless}}
+    </tr>
+</template>

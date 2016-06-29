@@ -1,0 +1,64 @@
+<template name="chartist">
+
+    {{> pageHeader title="Chartist" desc="Chartist.js is a simple responsive charting library built with SVG." category="Charts" }}
+
+    {{#staggering}}
+
+    <div class="content">
+
+        <div class="row">
+            <div class="col-lg-4">
+                {{#panel title="Basic line chart"}}
+                    <div>
+                        <div id="ct-chart1" class="ct-perfect-fourth"></div>
+                    </div>
+                {{/panel}}
+            </div>
+            <div class="col-lg-4">
+                {{#panel title="Basic pie chart"}}
+                    <div>
+                        <div id="ct-chart5" class="ct-perfect-fourth"></div>
+                    </div>
+                {{/panel}}
+            </div>
+            <div class="col-lg-4">
+                {{#panel title="Gauge chart"}}
+                    <div>
+                        <div id="ct-chart6" class="ct-perfect-fourth"></div>
+                    </div>
+                {{/panel}}
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                {{#panel title="Horizontal bar chart"}}
+                    <div>
+                        <div id="ct-chart4" class="ct-perfect-fourth"></div>
+                    </div>
+                {{/panel}}
+            </div>
+            <div class="col-lg-6">
+                {{#panel title="Stacked bar chart"}}
+                    <div>
+                        <div id="ct-chart3" class="ct-perfect-fourth"></div>
+                    </div>
+                {{/panel}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                {{#panel title="Line chart with area"}}
+                    <div>
+                        <div id="ct-chart7" class="ct-major-twelfth"></div>
+                    </div>
+                {{/panel}}
+            </div>
+
+        </div>
+
+    </div>
+
+    {{/staggering}}
+
+</template>

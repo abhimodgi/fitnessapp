@@ -1,0 +1,64 @@
+<template name="c3Charts">
+
+    {{> pageHeader title="D3 / C3 Charts" desc="D3-based reusable chart library" category="Charts" }}
+
+    {{#staggering}}
+
+    <div class="content">
+
+        <div class="row">
+            <div class="col-lg-4">
+                {{#panel title="Line type chart"}}
+                    <div>
+                        <div id="lineChart"></div>
+                    </div>
+                {{/panel}}
+            </div>
+            <div class="col-lg-4">
+                {{#panel title="Area bar chart"}}
+                    <div>
+                        <div id="areaChart"></div>
+                    </div>
+                {{/panel}}
+            </div>
+            <div class="col-lg-4">
+                {{#panel title="Pie type chart"}}
+                    <div>
+                        <div id="pie"></div>
+                    </div>
+                {{/panel}}
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                {{#panel title="Stocked type chart"}}
+                    <div>
+                        <div id="stocked"></div>
+                    </div>
+                {{/panel}}
+            </div>
+            <div class="col-lg-6">
+                {{#panel title="Scatter type chart"}}
+                    <div>
+                        <div id="scatter"></div>
+                    </div>
+                {{/panel}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                {{#panel title="Gauge type chart"}}
+                    <div>
+                        <div id="gauge"></div>
+                    </div>
+                {{/panel}}
+            </div>
+
+        </div>
+
+    </div>
+
+    {{/staggering}}
+
+</template>

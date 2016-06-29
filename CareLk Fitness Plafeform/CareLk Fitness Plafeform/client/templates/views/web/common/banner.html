@@ -1,0 +1,40 @@
+<Template name="banner">
+    <!--banner-->
+	<div class="banner">	
+		
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<a href="{{pathFor route='home'}}">CareLk <span>Fitness</span> - Logo</a>
+				</div>							 
+				{{> menu }}
+				<div class="clearfix"></div>
+			</div>
+		</div>	 
+		<div class="slider">
+			<div class="caption">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider">
+						<li><h1>FITNESS<br>NUTRITION</h1></li>
+						<li><h1>EXCERCISE <br>WORKOUTS</h1></li>	
+						<li><h1>BODY <br>LIFESTYLE</h1></li>
+					</ul>	
+					<h4>A web platform to schedule, monitor, analyse excercice, diet and performance</h4>
+					<a class="readmore" href="#">MORE</a>
+				</div>
+			</div>
+		</div>	
+		<script>  
+			$(function () {
+			  $("#slider").responsiveSlides({
+				auto: true,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				pager: true,
+			  });
+			});
+		  </script>		 
+	</div>
+	<!--//banner-->
+</Template>

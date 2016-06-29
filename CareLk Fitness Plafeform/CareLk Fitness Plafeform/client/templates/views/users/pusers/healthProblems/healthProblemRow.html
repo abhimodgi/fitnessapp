@@ -1,0 +1,11 @@
+<template name="healthProblemRow">
+    <tr>
+        <td>{{diagnostic}}</td>
+        <td>{{symptoms}}</td>
+        <td>{{medObservation}}</td>
+        <td>{{diseaseName}}</td>
+        {{#unless isPatient}}
+        <td>Actions</td>
+        {{/unless}}
+    </tr>
+</template>

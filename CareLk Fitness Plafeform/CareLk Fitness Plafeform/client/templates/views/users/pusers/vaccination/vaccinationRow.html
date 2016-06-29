@@ -1,0 +1,12 @@
+<template name="vaccinationRow">
+    <tr>
+        <td>{{cvxCode}}</td>
+        <td>{{formDateAdministered}}</td>
+        <td>{{formGivenDate}}</td>
+        <td>{{formExpiryDate}}</td>
+        <td>{{drugRoute}}</td>
+        {{#unless isPatient}}
+        <td>Actions</td>
+        {{/unless}}
+    </tr>
+</template>

@@ -1,0 +1,27 @@
+<template name="boxedLayout">
+
+    <!-- Splash screen -->
+    {{>splash }}
+
+    <div class="boxed-wrapper">
+
+        <!-- Header -->
+        {{> header }}
+
+        <!-- Navigation -->
+        {{> navigation }}
+
+        <!-- Main Wrapper -->
+        <div id="wrapper">
+            {{> yield}}
+
+            <!-- Right sidebar -->
+            {{> rightSidebar }}
+
+            <!-- Footer -->
+            {{> footer }}
+        </div>
+
+    </div>
+
+</template>

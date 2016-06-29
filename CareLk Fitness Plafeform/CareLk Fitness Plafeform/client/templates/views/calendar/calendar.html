@@ -1,0 +1,19 @@
+    <template name="calendar">
+    {{> pageHeader title="Calendar" desc="" category="App views" }}
+
+    {{#staggering}}
+    <div class="content">
+        <div class="row">
+            {{> fullcalendar options}}
+
+                <!-- {{#panel title="Stocked type chart"}}
+                    <div>
+                        <div id="stocked"></div>
+                    </div>
+                {{/panel}} -->
+                    {{> barChart}}
+
+        </div>
+    </div>
+    {{/staggering}}
+</template>

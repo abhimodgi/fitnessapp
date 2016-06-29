@@ -1,0 +1,73 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-base             # Packages every Meteor app needs to have
+mobile-experience       # Packages for a great mobile UX
+mongo                   # The database Meteor supports right now
+blaze-html-templates    # Compile .html files into Meteor Blaze views
+session                 # Client-side reactive dictionary for your app
+jquery                  # Helpful client-side library
+tracker                 # Meteor's client-side reactive programming library
+
+es5-shim                # ECMAScript 5 compatibility for older browsers.
+ecmascript              # Enable ECMAScript2015+ syntax in app code
+
+#insecure                # Allow all DB writes from clients (for prototyping)
+iron:router
+#react
+http
+email
+meteorhacks:ssr
+simple:reactive-method
+twbs:bootstrap
+less
+meteor-platform
+zimme:iron-router-active
+natestrauser:animate-css
+okgrow:router-autoscroll
+kevohagan:sweetalert
+chrismbeckett:toastr
+fortawesome:fontawesome
+#accounts-ui
+accounts-password
+#force-ssl
+matb33:collection-hooks
+dburles:collection-helpers
+#arillo:flow-router-helpers
+#meteorhacks:flow-layout
+#meteorhacks:flow-router
+rocketchat:oauth2-server
+#accounts-base
+#standard-app-packages
+accounts-facebook
+accounts-google
+service-configuration
+logging
+reload
+random
+ejson
+check
+joshdellay:meteor-ladda-bootstrap
+spacebars
+d3js:d3
+emdagon:c3js
+andrasph:clockpicker
+tsega:bootstrap3-datetimepicker
+reactive-var
+yogiben:admin
+aldeed:collection2
+accounts-base
+coffeescript
+rzymek:fullcalendar
+sewdn:masked-input
+peppelg:bootstrap-3-modal
+sergeyt:typeahead
+meteortoys:allthings
+momentjs:moment
+chart:chart
+natestrauser:x-editable-bootstrap
+standard-minifier-css
+standard-minifier-js

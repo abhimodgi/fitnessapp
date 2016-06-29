@@ -1,0 +1,4 @@
+Template.biodata.onRendered(function(){
+
+
+});
